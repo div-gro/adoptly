@@ -5,11 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (userLoggedIn) {
         document.getElementById("adopt-link").style.display = "block";
         document.getElementById("rehome-link").style.display = "block";
+        document.getElementById("account-link").style.display = "block"; 
         document.querySelector(".login-btn").style.display = "none";
         document.querySelector(".logout-btn").style.display = "inline-block";
     } else {
         document.getElementById("adopt-link").style.display = "none";
         document.getElementById("rehome-link").style.display = "none";
+        document.getElementById("account-link").style.display = "none";
         document.querySelector(".login-btn").style.display = "inline-block";
         document.querySelector(".logout-btn").style.display = "none";
     }
@@ -34,6 +36,7 @@ function toggleAuth() {
 function registerUser() {
     const email = document.getElementById("signupEmail").value;
     const password = document.getElementById("signupPassword").value;
+    const username = document.getElementById("signupUsername").value;
 
     if (localStorage.getItem(email)) {
         alert("User already exists!");
@@ -41,7 +44,7 @@ function registerUser() {
         return;
     }
 
-    localStorage.setItem(email, JSON.stringify({ email, password }));
+    localStorage.setItem(email, JSON.stringify({ email, password, username }));
     alert("Registration successful!");
     toggleAuth();
 }
@@ -59,4 +62,18 @@ function loginUser() {
     } else {
         alert("Invalid email or password.");
     }
+}
+
+// Load user details on My Account page
+function loadAccountInfo() {
+    const userLoggedIn = localStorage.getItem("userLoggedIn");
+
+    if (!userLoggedIn) {
+        window.location.href = "index.html"; // Redirect if not logged in
+        return;
+    }
+
+    const user = JSON.parse(localStorage.getItem(userLoggedIn));
+    document.getElementById("accountUsername").textContent = user.username;
+    document.getElementById("accountEmail").textContent = user.email;
 }
