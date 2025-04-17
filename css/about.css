@@ -1,0 +1,115 @@
+.about-hero {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.dark-mode .about-hero {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.about-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    padding: 3rem 0;
+}
+
+.about-content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.dark-mode .about-text h3 {
+    color: var(--text-dark);
+}
+
+.about-text p,
+.about-text ul {
+    margin-bottom: 1.5rem;
+}
+
+.about-text ul {
+    padding-left: 1.5rem;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team {
+    background-color: var(--bg-light);
+    padding: 3rem 0;
+}
+
+.dark-mode .team {
+    background-color: var(--bg-dark);
+}
+
+.team h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.dark-mode .team h3 {
+    color: var(--text-dark);
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: calc(33.33% - 1rem);
+    text-align: center;
+    background-color: var(--glass-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .team-member {
+    background-color: var(--glass-dark);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.dark-mode .team-member h4 {
+
+    color: var(--text-dark);
+}

@@ -1,0 +1,88 @@
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: var(--text-light);
+}
+
+.dark-mode .page-title {
+    color: var(--text-dark);
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.dark-mode .page-subtitle {
+    color: var(--text-dark);
+}
+
+.care-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.care-card {
+    background-color: var(--glass-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .care-card {
+    background-color: var(--glass-dark);
+}
+
+.care-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.dark-mode .care-card h3 {
+    color: var(--text-dark);
+}
+
+.care-card ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    color: var(--text-light);
+}
+
+.dark-mode .care-card ul {
+    color: var(--text-dark);
+}
+
+.emergency-section {
+    text-align: center;
+    background-color: var(--bg-light);
+    padding: 2rem;
+    border-top: 2px solid var(--glass-light);
+    border-bottom: 2px solid var(--glass-light);
+}
+
+.dark-mode .emergency-section {
+    background-color: var(--bg-dark);
+    border-color: var(--glass-dark);
+}
+
+.emergency {
+    font-size: 1.8rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.vet-link {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.vet-link a {
+    color: var(--accent);
+    text-decoration: underline;
+}

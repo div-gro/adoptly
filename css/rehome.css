@@ -1,0 +1,103 @@
+.hero {
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.dark-mode .hero {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.hero-content {
+    background-color: var(--glass-light);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.dark-mode .hero-content {
+    background-color: var(--glass-dark);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pet-form {
+    padding: 3rem 0;
+}
+
+.pet-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#pet-submission-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--glass-light);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.dark-mode #pet-submission-form {
+    background-color: var(--glass-dark);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select,
+.dark-mode .form-group textarea {
+    border: 1px solid var(--text-dark);
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: rgb(0, 128, 255);
+}

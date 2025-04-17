@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt - Adoptly</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site.webmanifest">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/adopt.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <h1 href="./index.html" class="logo">Adoptly</h1>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./adopt.html" class="active">Adopt</a></li>
+                    <li><a href="./rehome.html">Rehome</a></li>
+                    <li><a href="./login.html" id="logoutLink">Logout</a></li>
+                    <li><button id="theme-toggle">🌙</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="adopt-page">
+        <section class="hero">
+            <div class="container">
+                <h2>Find Your Perfect Companion</h2>
+                <p>Browse our available pets and give them a loving home</p>
+            </div>
+        </section>
+
+        <!-- Search Filters Section -->
+
+        <section class="search-filters">
+            <div class="container">
+                <form id="pet-search-form">
+                    <div class="form-group">
+                        <label for="pet-type">Pet Type:</label>
+                        <select id="pet-type" name="pet-type">
+                            <option value="">All</option>
+                            <option value="dog">Dogs</option>
+                            <option value="cat">Cats</option>
+                            <option value="small-animal">Small Animals</option>
+                            <option value="bird">Birds</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <select id="age" name="age">
+                            <option value="">Any</option>
+                            <option value="puppy">Puppy/Kitten</option>
+                            <option value="young">Young</option>
+                            <option value="adult">Adult</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="">Any</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Pets Display Section -->
+        <section class="pet-results">
+            <div class="container">
+                <h3>Available Pets</h3>
+                <div class="pet-grid" id="pet-grid">
+                    <!-- Pet cards will be inserted dynamically here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Adoptly</h3>
+                    <p>We're dedicated to finding loving homes for pets in need. Join us in making a difference!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Toronto, Canada</p>
+                    <p>Mobile: +1 234 567 8989</p>
+                    <p>Email: contact@adoplty.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./voluntary-registration.html">Volunteer Registration</a></li>
+                        <li><a href="./care-guide.html">Care Guide</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adoptly. All rights reserved.</p>
+                <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of
+                        Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/app.js"></script>
+    <script src="./js/adopt.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+.hero {
+    background-image: url('/assets/bg-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: var(--glass-light);
+    color: var(--text-light);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 180px;
+}
+
+.dark-mode .hero-content {
+    background-color: var(--glass-dark);
+    color: var(--text-dark);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+.featured-pets,
+.how-to-adopt,
+.about-content,
+.team {
+    padding: 3rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.pet-card {
+    background-color: var(--glass-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dark-mode .pet-card {
+    background-color: var(--glass-dark);
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pet-card h4 {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.pet-card p {
+    margin: 0 1rem 1rem;
+    color: var(--text-light);
+}
+
+.dark-mode .pet-card p {
+    color: var(--text-dark);
+}
+
+.pet-card .btn {
+    display: block;
+    background-color: var(--accent-color);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pet-card .btn:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+/* How to adopt section */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: calc(25% - 1rem);
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--glass-light);
+    border-radius: 10px;
+}
+
+.testimonials {
+    padding: 4rem 1rem;
+    background-color: var(--bg-light);
+}
+
+.dark-mode .testimonials {
+    background-color: var(--bg-dark);
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: var(--text-light);
+}
+
+.dark-mode .testimonials h2 {
+    color: var(--text-dark);
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid var(--accent-color);
+}
+
+.testimonial-text {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--glass-light);
+    border-radius: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode .testimonial-text {
+    background-color: var(--glass-dark);
+    color: var(--text-dark);
+}
+
+.testimonial-text span {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size: 1rem;
+}

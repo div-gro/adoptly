@@ -1,0 +1,76 @@
+.pet-profile {
+    padding: 2rem 0;
+}
+
+.pet-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pet-image {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pet-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pet-summary {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.enquire-btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+}
+
+.enquire-btn:hover {
+    background-color: rgb(0, 128, 255);
+}
+
+.pet-details {
+    margin-bottom: 2rem;
+}
+
+.pet-info {
+    background-color: var(--glass-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .pet-info {
+    background-color: var(--glass-dark);
+}
+
+h3 {
+    color: var(--text-light);
+    margin-top: 0;
+}
+
+.dark-mode h3,
+.dark-mode .pet-summary {
+    color: var(--text-dark);
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
