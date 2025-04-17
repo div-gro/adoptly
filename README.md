@@ -1,2 +1,0 @@
-# adoptly
-Pet Adoption Website
